@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\lcc"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "RicknMort"
+	}
+}
