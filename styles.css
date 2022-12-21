@@ -152,7 +152,7 @@ nav ul li a:before{
     background-position: center;
     
 }
-.search-bar{
+#search-bar{
     width: 100%;
     position: relative;
     max-width: 400px;
@@ -167,7 +167,7 @@ nav ul li a:before{
 
 
 }
-.search-bar input{
+#search-bar input{
     width: 100%;
     background: transparent;
     border: 0;

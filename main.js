@@ -29,7 +29,7 @@ const loadCharacters = async () =>{
     const res= await fetch('https://rickandmortyapi.com/api/character');
     let Chars = await res.json();
     charss = Chars.results;
-    //makeCards(charss);
+    makeCards1(charss);
   } catch(err)
   {
     console.log(err);
@@ -50,7 +50,22 @@ function makeCards(charactersArray){
 
   const cardcontainer = document.querySelector('#card-container')
   charactersArray.forEach((character) =>{
-   cardcontainer.innerHTML = cardcontainer.innerHTML +
+   cardcontainer.innerHTML = 
+   ` <div class="boxes">
+   <div class="box-content">
+     <h2>${character.name}</h2>
+     <img src=${character.image}></img>
+     <h3>${character.species}</h3>
+
+   </div>
+ </div>`
+  })
+}
+function makeCards1(charactersArray){
+
+  const cardcontainer = document.querySelector('#card-container')
+  charactersArray.forEach((character) =>{
+   cardcontainer.innerHTML += 
    ` <div class="boxes">
    <div class="box-content">
      <h2>${character.name}</h2>
